@@ -24,6 +24,18 @@ Tahapan ketika ingin men-design User Experience, antara lain:
 ## User Interface
 
 User Interface (UI) adalah visualisasi yang user gunakan untuk berinteraksi dengan produk kita.
+User Interface memiliki 4 pilar, ke empat pilar ini didasari dari bagaimana penampilan dan pemahaman dari desain yang dibuat saling bekerja sama.
+
+1. Consistency adalah desain yang menggunakan pola yang sama, selain itu juga urutan yang memiliki situasi yang mirip.
+2. Keep the interface simple, perlu untuk menghilangkan element-element yang tidak dibutuhan dan menggunakan bahasa yang jelas.
+3. Good Typography
+   Typace merupakan kumpulan huruf memiliki pola yang sama, perlu memperhatikan ukuran, jenis font, dan juga pengaturannya bertujuan agar text menjadi lebih mudah di baca.
+4. Offer Informative Feedback adalah informasi balik harus berarti, relevan, dan jelas
+
+## Prototype
+
+Prototype adalah simulasi atau contoh sample dari final produk tersebut.
+Tujuan dari protoype ini adalah untuk testing sebelum kalian menghabiskan banyak waktu dan uang dalam pembuatan projek tersebut.
 
 ## Task
 
