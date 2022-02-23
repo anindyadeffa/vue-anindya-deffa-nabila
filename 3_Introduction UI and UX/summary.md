@@ -27,12 +27,8 @@ User Interface (UI) adalah visualisasi yang user gunakan untuk berinteraksi deng
 
 ## Task
 
-Buatlah repository baru di Github, dengan membuat branch baru sebagai developer, dan membuat branch ketiga dan ke empat sebagai penambahan fitur, kemudian melakukan merge ke branch developer. Buktikan dengan screenshot insights network-nya.
+Mencari desain ui ux, dan menidentifikasi bagian-bagian yang ada pada website tersebut. Jelaskan detail fitur dan letar dari UI dan UX yang ditemukan.
 
 Berikut link file document dari pratikum ini:
 
-<!-- [index.html](pratikum/index.html) -->
-
-Dan berikut beberapa hasil screenshot halaman website:
-
-<!-- ![network-graph](screenshots/network-graph.png) -->
+[pratikum-introduction-ui-ux.docx](pratikum/pratikum-introduction-ui-ux.docx)
