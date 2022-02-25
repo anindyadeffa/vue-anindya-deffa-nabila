@@ -56,11 +56,11 @@ Membuat 3 halaman website sederhana, yang membuat file index.html yang memuat te
 
 Berikut link file source code dari pratikum ini:
 
-- Untuk halaman index [index](pratikum/index.html)
-- Untuk halaman form [form](pratikum/form.html)
-- Untuk halaman welcome [welcome](pratikum/welcome.html)
+- Untuk halaman index : [index](pratikum/index.html)
+- Untuk halaman form : [form](pratikum/form.html)
+- Untuk halaman welcome : [welcome](pratikum/welcome.html)
 
-Dan berikut hasil :
+Dan berikut hasil screenshots dari halaman yang telah dibuat:
 ![index-page](screenshots/index-page.png)
 ![form-page](screenshots/form-page.png)
 ![welcome-page](screenshots/welcome-page.png)
