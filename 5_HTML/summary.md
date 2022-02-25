@@ -20,7 +20,7 @@ Kegunaan HTML, antara lain :
 
 ### HTML Editors
 
-    HTML Editors yang dapat digunakan antara lain Notepad, Visual Studio Code, Notepad++, dan Atom Editor.
+HTML Editors yang dapat digunakan antara lain Notepad, Visual Studio Code, Notepad++, dan Atom Editor.
 
 ### Dokumentasi HTML
 
