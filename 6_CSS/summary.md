@@ -19,7 +19,9 @@ Ada 3 cara menambahkan file CSS ke dalam HTML, antara lain:
    - Selector Class (.), tag class dengan nama yang sama dapat dipakai berulang, dan satu element boleh memiliki lebih dari satu Class yang berbeda.
 
 2. CSS Grouping
-   CSS Grouping adalah beberapa selector dapat dikelompokkan ke dalam satu deklarasi style, penggunaannya <selector>,<selector> -- contoh : h1,h2 {}.
+   CSS Grouping adalah beberapa selector dapat dikelompokkan ke dalam satu deklarasi style, penggunaannya <selector>,<selector>.
+
+   - contoh : h1,h2 {}.
 
 3. CSS Font
    CSS Font adalah beberapa font style pada css. (font, font-family, font-size, font-weight, dan font-style).
@@ -34,19 +36,21 @@ Ada 3 cara menambahkan file CSS ke dalam HTML, antara lain:
 
 8. CSS Display adalah menentukan tampilan pada element (block, inline-block, dan none).
 
-9. CSS Table adalah membuat style pada element table HTML. - border untuk menambahkan border pada table, th, dan td. - border-collapse untuk membuat border menjadi single border. - :nth-child(even) untuk membuat background stripe.
+9. CSS Table adalah membuat style pada element table HTML.
+   - border untuk menambahkan border pada table, th, dan td.
+   - border-collapse untuk membuat border menjadi single border.
+   - :nth-child(even) untuk membuat background stripe.
 
 ## Task
 
-<!-- Membuat 3 halaman website sederhana, yang membuat file index.html yang memuat text, deskripsi, list, dan link yang berpindah halaman ke form Sign Up dengan nama file form.html berisikan form group. Dan juga file welcome.html yang berisikan text judul dan deskripsi. -->
+Membuat halaman HTML dengan nama file file1.html dengan ketentuan penggunaan font-family dan font-size yang telah ditentukan. Dan membuat sebuah file baru dengan nama file file2.html dengan contoh design yang sudah diberikan untuk memperbaiki bentuk tampilan website menggunakan CSS.
 
-<!-- Berikut link file source code dari pratikum ini:
+Berikut link file source code dari pratikum ini:
 
-- Untuk halaman index [index](pratikum/index.html)
-- Untuk halaman form [form](pratikum/form.html)
-- Untuk halaman welcome [welcome](pratikum/welcome.html)
+- Untuk halaman file-1 : [file-1](pratikum/file1.html)
+- Untuk halaman file-2 : [file-2](pratikum/file2.html)
 
-Dan berikut hasil :
-![index-page](screenshots/index-page.png)
-![form-page](screenshots/form-page.png)
-![welcome-page](screenshots/welcome-page.png) -->
+Dan berikut hasil screenshot dari halaman HTML yang telah dibuat :
+
+![file](screenshots/file-1.png)
+![file-2](screenshots/file-2.png)

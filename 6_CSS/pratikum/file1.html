@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pratikum CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Slabo 27px';
+        font-style: normal;
+        font-weight: 400;
+        color: #fff;
+    }
+    .red-box {
+        width: 100px;
+        height: 100px;
+        margin: 25px;
+        padding: 13px;
+        text-align: center;
+        background-color: red;
+    }
+
+    .blue-box {
+        width: 100px;
+        height: 100px;
+        margin: 25px;
+        padding: 13px;
+        text-align: center;
+        background-color: blue;
+    }
+
+    .flex-box {
+        display: flex;
+    }
+
+    .green-box {
+        width: 300px;
+        height: 300px;
+        margin: 25px;
+        background-color: green;
+        border-radius: 15px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="flex-box">
+        <div class="red-box">
+            <p>Saya adalah box red berukuran 100px</p>
+        </div>
+        <div class="blue-box">
+            <p>Saya adalah box blue berukuran 100px</p>
+        </div>
+    </div>
+    <div class="green-box">
+        <p>Saya adalah box blue berukuran 300px</p>
+    </div>
+</body>
+</html>
