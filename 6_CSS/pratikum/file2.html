@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Tugas Pratikum CSS</title>
     <style>
         * {
@@ -13,57 +17,79 @@
         body {
             margin: 0;
             padding: 0;
+            background-image: url(img/sample-pattern.png);
+            font-family: 'Poppins', sans-serif;
         }
 
-        /* .navbar {
-
-        } */
-
-        .logo {
-            width: 20%;
-            float: left;
-            margin: 10px;
+        h1 {
+            font-size: 30px;
         }
-        
-        ul {
-            width: 80%;
-            float: right;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
+
+        .nav {
             overflow: hidden;
-        }
-      
-        li {
-            float: right;
+            background-color: #fff;
         }
 
-        li a {
+        .nav a {
+            float: right;
             display: block;
-            color: #666;
-            text-align: center;
+            color: grey;
             padding: 14px 16px;
             text-decoration: none;
-        }
-      
-        li a:hover:not(.active) {
-            background-color: #ddd;
+            font-size: 17px;
         }
 
-        .d-flex {
-            display: flex;
+        .nav a:hover {
+            background-color: #ddd;
+            color: #fff;
+        }
+
+        .nav .icons {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+        .nav a:not(:first-child) {display: none;}
+            .nav a.icons {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+        .nav.responsive {position: relative;}
+            .nav.responsive .icons {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .nav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        .logo {
+            float: left;
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+
+        .footer {
+            background-color: #000;
+            padding: 15px;
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
         }
 
         .featured-posts {
-            background-image: url(img/sample-pattern.png);
-            max-width: 100%;
-            padding-bottom: 50px;
+            padding-bottom: 30px;
         }
 
-        .title {
+        .title-feature {
             text-align: center;
-            font-size: 30px;
-            margin-top: 0;
             padding: 20px;
         }
 
@@ -78,47 +104,56 @@
             padding-right: 20px;
         }
 
-        .footer {
-            background-color: #000;
-            padding: 15px;
-            text-align: center;
-            color: #fff;
-            font-size: 12px;
+        .p-about {
+            padding-left: 100px;
+            padding-right: 100px;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
+
+    <div class="nav">
         <div class="d-flex">
             <div class="logo">
                 <img src="img/sample-logo.png" height="25px" alt="">
             </div>
-            <ul>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#home">Home</a></li>
-            </ul>
+            <a href="#contact">Contact</a>
+            <a href="#feature">Feature</a>
+            <a href="#about">About</a>
+            <a href="#" class="icons" onclick="">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </div>
-    <div class="featured-posts">
-        <h1 class="title">Featured Posts</h1>
-        <div class="card">
-            <h5 style="color: #549be0;">Lorem Ipsum 1</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis exercitationem laborum nemo consectetur ipsa ut accusantium sunt asperiores autem. Quas quam deserunt voluptates nam! Quibusdam quos ab obcaecati ducimus.</p>
+    <section id="about">
+        <div style="padding-left: 16px; text-align: center;">
+            <h1>About</h1>
+            <p class="p-about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur alias voluptatum odit atque ipsum iste. Suscipit reprehenderit molestias, velit, totam vero accusantium eius perferendis cupiditate quae iusto est expedita aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum id voluptatum natus est voluptate, similique neque, iusto dolorem commodi aspernatur quod, vel dicta tempore eveniet obcaecati et illo praesentium?</p>
         </div>
-        <div class="card">
-            <h5 style="color: #549be0;">Lorem Ipsum 2</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis exercitationem laborum nemo consectetur ipsa ut accusantium sunt asperiores autem. Quas quam deserunt voluptates nam! Quibusdam quos ab obcaecati ducimus.</p>
+    </section>
+
+    <section id="feature">
+        <div class="featured-posts">
+            <h1 class="title-feature">Featured Posts</h1>
+            <div class="card">
+                <h5 style="color: #549be0;">Lorem Ipsum 1</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis exercitationem laborum nemo consectetur ipsa ut accusantium sunt asperiores autem. Quas quam deserunt voluptates nam!</p>
+            </div>
+            <div class="card">
+                <h5 style="color: #549be0;">Lorem Ipsum 2</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis exercitationem laborum nemo consectetur ipsa ut accusantium sunt asperiores autem. Quas quam deserunt voluptates nam!</p>
+            </div>
+            <div class="card">
+                <h5 style="color: #549be0;">Lorem Ipsum 3</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis exercitationem laborum nemo consectetur ipsa ut accusantium sunt asperiores autem. Quas quam deserunt voluptates nam!</p>
+            </div>
+            <div class="card">
+                <h5 style="color: #549be0;">Lorem Ipsum 4</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis exercitationem laborum nemo consectetur ipsa ut accusantium sunt asperiores autem. Quas quam deserunt voluptates nam!</p>
+            </div>
         </div>
-        <div class="card">
-            <h5 style="color: #549be0;">Lorem Ipsum 3</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis exercitationem laborum nemo consectetur ipsa ut accusantium sunt asperiores autem. Quas quam deserunt voluptates nam! Quibusdam quos ab obcaecati ducimus.</p>
-        </div>
-        <div class="card">
-            <h5 style="color: #549be0;">Lorem Ipsum 4</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis exercitationem laborum nemo consectetur ipsa ut accusantium sunt asperiores autem. Quas quam deserunt voluptates nam! Quibusdam quos ab obcaecati ducimus.</p>
-        </div>
-    </div>
+    </section>
+
     <div class="footer">
         <p>Copyright © 2022 Anindya Deffa Nabila</p>
     </div>
