@@ -54,3 +54,4 @@ Dan berikut hasil screenshot dari halaman HTML yang telah dibuat :
 
 ![file](screenshots/file-1.png)
 ![file-2](screenshots/file-2.png)
+![file-2-resp](screenshots/file-2-mobile-responsive.png)
