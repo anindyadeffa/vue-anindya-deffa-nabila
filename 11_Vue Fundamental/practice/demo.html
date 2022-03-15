@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Hello~!</title>
+    </head>
+    <body>
+        <div id="app">
+            <h3>{{ message }}</h3>
+            <input type="text" v-model="message"/>
+            <div v-if="message.length > 10">Good!</div>
+            <button @click="showAlert()">Submit</button>
+            
+            
+            <ol>
+                <li v-for="fruit in listFruit">
+                    {{ fruit }}
+                </li>
+            </ol>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <script>
+            new Vue({
+                el: '#app',
+                data() {
+                    return {
+                        message: 'Hello Vue!',
+                        listFruit: ['apel','pisang','stroberi']
+                    }
+                },
+                methods: {
+                    showAlert(){
+                        alert('Data has submitted')
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
