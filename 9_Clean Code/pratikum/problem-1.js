@@ -1,17 +1,30 @@
-class user {
+class UserData {
 	var id;
 	var username;
     var password;
 }
 
-class userservice {
-    user[] users = [];
+class UserService {
+    UserData[] users = [{
+        id : "anindya1201",
+        username : "anindyadeffa",
+        password : "*****",
+    }];
 
-    user [] getallusers() {
+    User [] getAllUsers() {
         return users;
     }
 
-    user getuserbyid(userid) {
-        return this.users.filter(userid);
+/* This is the function for taking user
+*
+* @param userid string
+*/
+
+    UserData getUserById(userId) {
+        return users.filter(user) => {
+            if (user.id === userId) {
+                return user;
+            }
+        });
     }
 }

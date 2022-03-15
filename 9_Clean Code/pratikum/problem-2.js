@@ -1,29 +1,28 @@
-// This is class Kendaraan with objects
 class Kendaraan {
-    var total_roda = 0;
-    var kecepatan_per_jam = 0;
+    constructor(totalRoda, kecepatanPerJam) {
+        this.totalRoda = totalRoda; 
+        this.kecepatanPerJam = kecepatanPerJam;
+    }
 }
 
 // This is extends class Mobil from class Kendaraan 
 class Mobil extend Kendaraan {
-        void berjalan() {
-        tambah_kecepatan(10);
+    berjalan(){
+        this.tambahKecepatan(10);
     }
-    // Methods tambah_kecepatan
-    tambah_kecepatan(var kecepatan_baru) {
-        kecepatan_per_jam = kecepatan_per_jam + kecepatan_baru;
+    // Methods tambahKecepatan with params kecepatanBaru
+    tambahKecepatan(kecepatanBaru){
+        this.kecepatanPerJam += kecepatanBaru;
     }
 }
 
-void main() {
-    mobil_cepat = new Mobil();
-    mobil_cepat.berjalan();
-    mobil_cepat.berjalan();
-    mobil_cepat.berjalan();
+mobilCepat = new Mobil();
+mobilCepat.berjalan();
+mobilCepat.berjalan();
+mobilCepat.berjalan();
 
-    mobil_lamban = new Mobil();
-    mobil_lamban.berjalan();
-}
+mobilLamban = new Mobil();
+mobilLamban.berjalan();
 
 // This is class Kendaraan
 // class Kendaraan {
@@ -53,3 +52,49 @@ void main() {
 
 // console.log('Kecepatan')
 
+// const MOBILPR = "avanza"
+
+// class kendaraan untuk data kecepatan per jam perjalanan
+class Kendaraan {
+    constructor(totalRoda, kecepatanPerJam) {
+      this.totalRoda = totalRoda;
+      this.kecepatanPerJam = kecepatanPerJam;
+    }
+  }
+  
+  // class mobil untuk menambah kecepatan mobil
+  class Mobil extends Kendaraan {
+    // berjalan(){
+    //   this.tambahKecepatan(10);
+    // }
+  
+    constructor(totalRoda = 4, kecepatanAwal = 0){
+      super(totalRoda, kecepatanAwal)
+      console.log("mobil roda: ", this.totalRoda)
+    }
+  
+    berjalan(kecepatanBaru = 10){
+      this.kecepatanPerJam += Number(kecepatanBaru);
+      console.log("kecepatan: ", this.kecepatanPerJam)
+    }
+    
+    // tambahKecepatan(kecepatanBaru){
+    //   this.kecepatanPerJam += kecepatanBaru;
+    // }
+  }
+  
+  
+  mobilCepat = new Mobil(6, 0);
+  mobilCepat.berjalan();
+  mobilCepat.berjalan();
+  mobilCepat.berjalan(20);
+  
+  console.log("mobil cepat: ", mobilCepat)
+  console.log("---------------")
+  
+  mobilLamban = new Mobil();
+  mobilLamban.berjalan();
+  console.log("mobil lambat: ", mobilLamban)
+  
+
+//   https://replit.com/@MohamadLutfi/DownrightWorseDeadcode#index.js
