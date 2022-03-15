@@ -82,10 +82,13 @@ Membuat Todo List dengan kondisi dan visual seperti pada contoh yang diberikan.
 File source code Todo List yang telah dikerjakan : [todo-list](pratikum/todo-list.html)
 
 1. Hasil screenshot sebelum melakukan input data, terdapat sebuah kolom input dan sebuah tombol :
+
    ![todo-list](screenshots/todo-list.png)
 
 2. Hasil screenshot setelah melakukan input data, dan reset kolom input setelah tombol diklik :
+
    ![todo-list-1](screenshots/todo-list-1.png)
 
 3. Hasil screenshot apabila list yang sudah dimasukkan sama dengan atau lebih besar dari 4 maka tunjukkan kata 'Hebat!' dibawah input.
+
    ![todo-list-final](screenshots/todo-list-final.png)
