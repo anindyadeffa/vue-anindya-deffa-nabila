@@ -50,3 +50,5 @@ Cara kerja Komponen File Tunggal, terdapat 3 tag utama pada Komponen File Tungga
 
 Membuat Todo List dengan kondisi dan visual seperti pada contoh yang diberikan.
 File source code Todo List yang telah dikerjakan : [todo-list](pratikum/task-vue-cli/src/App.vue)
+
+![todo-list](screenshots/todo-list.png)

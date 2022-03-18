@@ -3,7 +3,7 @@
     <h2>{{ message }}</h2>
     <ol>
         <li v-for="(todo, index) in listTodo" :key="index">
-          {{ todo.name }}
+          {{ todo }}
         </li>
     </ol>
     <input type="text" v-model="todo"/>
@@ -22,36 +22,21 @@ export default {
     return {
       message: 'Todo List!',
       todo: '',
-      listTodo: [
-        {
-          name: "List 1",
-        },
-      ]
+      listTodo: []
     }
   },
   methods: {
     tambahkan(){
-      if (this.listTodo === null) return;
+      this.error;
+      if (this.todo === "") {
+        // this.error.push('Input Data');
+        // this.$alert("Data kosong");
+      }
       else {
         this.listTodo.push(this.todo);
         this.todo = "";
       }
-    },
-    // tambahkan(todo){
-    //   this.error;
-    //   if (todo) {
-    //     this.listTodo.push(todo)
-    //     console.log(todo);
-    //   }
-    //   else if (this.todo === '') {
-    //     this.error.push('Input Data');
-    //     this.$alert("Data kosong");
-    //   }
-    //   else {
-    //     this.listTodo.push(todo);
-    //     this.todo = "";
-    //   }
-    // }
+    }
   }
 };
 </script>
