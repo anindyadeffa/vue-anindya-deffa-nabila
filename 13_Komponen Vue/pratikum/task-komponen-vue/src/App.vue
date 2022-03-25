@@ -2,18 +2,15 @@
   <div id="app">
     <h3>Todo List</h3>
     <TodoList/>
-    <TodoInput/>
   </div>
 </template>
 
 <script>
-import TodoInput from '@/components/TodoInput';
 import TodoList from '@/components/TodoList';
 
 export default {
   name: 'App',
   components: {
-    TodoInput,
     TodoList
   }
 }

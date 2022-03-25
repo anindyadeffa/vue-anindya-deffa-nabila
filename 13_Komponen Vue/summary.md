@@ -118,9 +118,20 @@ Buatlah sebuah todo list dengan menggunakan komponen file tunggal.
 Dengan kondisi dan contoh visual, sebagai berikut:
 
 1. Input todo yang lebarnya memenuhi layar.
+
+   ![todo-list](screenshots/todo-list.png)
+
 2. Masing-masing item memiliki tombol Hapus dan Edit dengan fungsionalitasnya.
+
    - Tampilan ketika tombol Edit ditekan, simpan perubahan setelah tombol Edit ditekan kembali.
+
+   ![todo-list](screenshots/todo-list-edit.png)
+
+   ![todo-list](screenshots/todo-list-updated.png)
+
    - Jika tombol Hapus ditekan, maka list dibawahnya akan naik ke atas menggantikan.
+
+     ![todo-list](screenshots/delete-list.png)
 
 note: Tampilan tidak harus sama persis namun usahakan rapi. Fungsionalitas Edit dan Hapus harus ada.
 hint: Gunakan array map dan array filter.
