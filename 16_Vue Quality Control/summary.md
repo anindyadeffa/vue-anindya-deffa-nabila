@@ -97,6 +97,10 @@ Operasi yang harus ada:
 5. Rata-rata (5 Parameter)
 6. Sisa bagi (2 Parameter)
 7. Luas Persegi (2 Parameter)
-8. Luas Lingkarang (2 Parameter)
+8. Luas Lingkaran (2 Parameter)
 9. Luas Kubus (3 Parameter)
 10. Volume Kubus (3 Parameter)
+
+![test-unit](screenshots/test-unit.png)
+![coverage-all-files](screenshots/coverage-all-files.png)
+![coverage-task](screenshots/coverage-task.png)
