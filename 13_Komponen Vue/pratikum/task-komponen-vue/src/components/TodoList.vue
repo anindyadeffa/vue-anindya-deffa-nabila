@@ -1,60 +1,55 @@
 <template>
   <div>
     <ol>
-        <li v-for="(todo, index) in listTodo" :key="todo.selectedIndex">
-            {{ todo }}
+      <li class="list-todo" v-for="(Todo, index) in listTodo" :key="Todo.id">
+        {{ Todo }}
 
-            <button @click="deleteTodo(index, todo)">Hapus</button>
-            <button @click="editTodo(index, todo)">Edit</button>
-        </li>
+        <button @click="editTodo(index)">Edit</button>
+        <button @click="deleteTodo(index)">Delete</button>
+
+        <input v-if="isEdit" v-model="changeInput" />
+        <button v-if="isEdit" @click="buttonUpdate(index)">Update</button>
+      </li>
     </ol>
 
-    <div v-if="!isEditing">
-        <input type="text" v-model="todo">
-        <input type="submit" value="Tambahkan" @click="addTodo()">
-    </div>
-
-    <div v-else>
-        <input type="text" v-model="todo">
-        <input type="submit" value="Update" @click="updateTodo()">
-    </div>
-
-    <!-- <button @click="addTodo()" type="submit">Tambahkan</button> -->
-    <!-- <div v-if="listTodo.length >= 4">Hebat!</div> -->
+    <input type="text" v-model="Todo" />
+    <button @click="submitTodo()">Tambahkan</button>
   </div>
-</template>
 
+</template>
 <script>
 export default {
-  name: 'TodoList',
+  name: "TodoList",
   data() {
-      return {
-          todo: '',
-          listTodo: [],
-          selectedIndex: null,
-          isEditing: false,
-      };
+    return {
+      Todo: "",
+      listTodo: [],
+      isEdit: false,
+      changeInput: "",
+    };
   },
   methods: {
-    addTodo(){
-        this.listTodo.push(this.todo);
-        this.todo = "";
+    submitTodo() {
+      this.listTodo.push(this.Todo);
+      this.Todo = "";
     },
-    editTodo(index, todo) {
-        this.todo = todo;
-        this.selectedIndex = index;
-        this.isEditing = true;
-    },
-    updateTodo() {
-        this.listTodo.splice(this.selectedIndex, 1, this.todo);
-        this.isEditing = false;
-    },
+
     deleteTodo(index) {
-        this.listTodo.splice(index, 1)
+      this.listTodo.splice(index, 1);
+    },
+
+    editTodo() {
+      this.isEdit = true;
+    },
+
+    buttonUpdate(index) {
+      this.listTodo[index] = this.changeInput;
     },
   },
 };
 </script>
-
-<style>
+<style scoped>
+.list-todo {
+  padding-right: 100px;
+}
 </style>

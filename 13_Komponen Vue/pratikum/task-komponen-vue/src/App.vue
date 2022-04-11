@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <h3>Todo List</h3>
-    <TodoList/>
+    <TodoListWithComponent/>
   </div>
 </template>
 
 <script>
-import TodoList from '@/components/TodoList';
+import TodoListWithComponent from '@/components/TodoListWithComponent';
 
 export default {
   name: 'App',
   components: {
-    TodoList
+    TodoListWithComponent
   }
 }
 </script>
