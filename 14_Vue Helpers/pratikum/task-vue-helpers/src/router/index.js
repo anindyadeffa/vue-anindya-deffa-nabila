@@ -1,21 +1,21 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import TodoList from '../views/TodoList';
-import ListDetail from '../views/ListDetail';
+import TodoList from '@/views/TodoList.vue';
+import ListDetail from '@/views/ListDetail.vue';
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'TodoList',
+    path: "/",
+    name: "TodoList",
     component: TodoList,
   },
   {
-    path: '/list-detail',
-    name: 'ListDetail',
+    path: ":index",
+    name: "ListDetail",
     component: ListDetail,
-  },
+  }
 ];
 
 const router = new VueRouter({

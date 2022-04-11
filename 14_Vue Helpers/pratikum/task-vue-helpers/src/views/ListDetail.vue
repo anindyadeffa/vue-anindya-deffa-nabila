@@ -1,20 +1,28 @@
 <template>
   <div class="list-detail">
     <router-link to="/" tag="button">Kembali</router-link>
-    <router-view/>
-    
+    <h1> {{ todoDetail.todolist }} </h1>
     <h1>This is a list detail page</h1>
+    <router-view/>
 
-    <!-- <p>Desctiption : {{ currentDesc }}</p> -->
+    <p>Description : {{ currentDesc }}</p>
+    <button>Ubah Deskripsi</button>
+    <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  // computed: {
-  //   currentDesc() {
-  //     return this.$store.state.desc;
-  //   },
-  // },
+  name: "ListDetail",
+  data() {
+    return {
+      todoDetail: [],
+    }
+  },
+  computed: {
+    currentDesc() {
+      return this.$store.state.desc;
+    },
+  },
 };
 </script>

@@ -1,12 +1,11 @@
 <template>
   <li>
-    <label v-if="!editMode">
+    <label v-if="!editMode" @click="detailTodo">
       {{ todo.todolist }}
     </label>
     <label v-if="editMode">
       <input v-model="inputEdited" />
     </label>
-
     <button class="btn-delete" @click="hapusList(index)">Hapus</button>
     <button class="btn-edit" v-if="!editMode" @click="editList">Edit</button>
     <button class="btn-edit" v-if="editMode" @click="editListBaru(index)">Update</button>
@@ -45,6 +44,12 @@ export default {
     editListBaru(index) {
       this.$emit("edit-list-baru", index, this.inputEdited);
       this.editList();
+    },
+    detailTodo() {
+      this.$router.push({
+        name: "ListDetail",
+        params: { index: this.index },
+      });
     },
   },
 };

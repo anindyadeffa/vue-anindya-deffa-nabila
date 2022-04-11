@@ -2,8 +2,10 @@
   <div>
     <ol>
       <TodoListItem v-for="(Todo, index) in listTodo" :key="index" :todo="Todo" :index="index"
-        @edit-list-baru="editTodoTask" @hapus-todo="hapusTodoTask"
+        @edit-list-baru="editTodoTask"
+        @hapus-todo="hapusTodoTask"
       />
+      <router-view/>
     </ol>
 
     <input class="form-add" type="text" v-model="Todo" />
@@ -12,7 +14,7 @@
   
 </template>
 <script>
-import TodoListItem from "../components/TodoListItem.vue";
+import TodoListItem from "@/components/TodoListItem.vue";
 
 export default {
   name: "TodoListWithComponent",
@@ -22,10 +24,12 @@ export default {
   data() {
     return {
       Todo: "",
-      listTodo: [
-        { todolist: "Belajar Frontend", isEdit: 0 },
-      ],
     };
+  },
+  computed: {
+    listTodo() {
+      return this.$store.state.listTodo;
+    },
   },
   methods: {
     submitTodo() {
@@ -39,6 +43,17 @@ export default {
     editTodoTask(index, value) {
       this.listTodo[index].todolist = value;
     },
+    // submitTodo() {
+    //   this.$store.dispatch("addTodo", this.Todo);
+    //   this.Todo = "";
+    // },
+    // hapusTodoTask(index) {
+    //   this.$store.dispatch("deleteTodo", index);
+    // },
+    // editTodoTask(index, value) {
+    //   this.$store.dispatch("editTodo", index);
+    //   this.Todo = value;
+    // },
   },
 };
 </script>

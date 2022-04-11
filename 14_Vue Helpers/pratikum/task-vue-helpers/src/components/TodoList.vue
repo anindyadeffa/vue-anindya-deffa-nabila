@@ -4,8 +4,8 @@
       <li class="list-todo" v-for="(Todo, index) in listTodo" :key="Todo.id">
         {{ Todo }}
 
-        <button @click="editTodo(index)">Edit</button>
-        <button @click="deleteTodo(index)">Delete</button>
+        <button @click="editTodoList(index)">Edit</button>
+        <button @click="deleteTodoList(index)">Delete</button>
 
         <input v-if="isEdit" v-model="changeInput" />
         <button v-if="isEdit" @click="buttonUpdate(index)">Update</button>
@@ -13,7 +13,7 @@
     </ol>
 
     <input type="text" v-model="Todo" />
-    <button @click="submitTodo()">Tambahkan</button>
+    <button @click="submitTodoList()">Tambahkan</button>
   </div>
 
 </template>
@@ -29,16 +29,16 @@ export default {
     };
   },
   methods: {
-    submitTodo() {
+    submitTodoList() {
       this.listTodo.push(this.Todo);
       this.Todo = "";
     },
 
-    deleteTodo(index) {
+    deleteTodoList(index) {
       this.listTodo.splice(index, 1);
     },
 
-    editTodo() {
+    editTodoList() {
       this.isEdit = true;
     },
 
