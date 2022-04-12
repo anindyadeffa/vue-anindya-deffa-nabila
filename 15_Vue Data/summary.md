@@ -91,3 +91,6 @@ Buat sebuah aplikasi berita dengan bantuan https://newsapi.org/
 - Jika salah satu berita ditekan, maka akan mengarah ke detail berita, di mana terdapat konten.
 - Tampilan tidak harus sama persis namun usahakan rapi. Data yang disajikan harus diambil dari API.
   Hint: Gunakan store untuk menampung detail berita.
+
+![berita](screenshots/berita.png)
+![details-news](screenshots/details-news.png)
