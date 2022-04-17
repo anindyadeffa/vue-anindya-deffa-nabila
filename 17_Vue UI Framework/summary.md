@@ -51,3 +51,6 @@ Cara Kerja Reaktivitas pada Vuetify: Lebar layar dibagi menjadi beberapa golonga
 ## Task
 
 Refaktor aplikasi Berita pada Task Vue Data menggunakan Vuetify.
+![news](screenshots/news.png)
+![detail-news](screenshots/detail-news.png)
+![category-navdrawers](screenshots/category-navdrawers.png)
