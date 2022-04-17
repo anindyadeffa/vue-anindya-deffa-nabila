@@ -20,6 +20,9 @@ export default {
   props: {
     news: Object,
   },
+  mounted () {
+        this.$store.dispatch('fetchNewsList');
+    },
 };
 </script>
 
