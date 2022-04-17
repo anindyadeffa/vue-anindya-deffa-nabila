@@ -8,9 +8,9 @@ const state = {
 
 const mutations = {
   setNews(state, param) {
-    // state.lists = param.articles;
-    // state.totalResults = param.totalResults;
     state.lists = param.articles;
+    state.totalResults = param.totalResults;
+    // state.lists = param.articles;
   },
   setError(state, param) {
     state.error = param;
@@ -38,8 +38,8 @@ const actions = {
         store.commit("setError", error.msg);
       });
   },
-  categoryListNews(store, category) {
-    store.commit('setCategory', category);
+  categoryListNews(store, payload) {
+    store.commit('setCategory', payload);
     store.dispatch('fetchListNews');
   },
 };
